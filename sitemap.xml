@@ -2,17 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://continental-hub.com/</loc>
-  </url>
-  <url>
-    <loc>https://continental-hub.com/index.html</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://continental-hub.com/websites.html</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://continental-hub.com/news.html</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
   <url>
     <loc>https://continental-hub.com/contact.html</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
 </urlset>

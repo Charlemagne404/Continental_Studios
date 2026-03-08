@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/C2-dark.png" type="image/x-icon">
+    <link rel="icon" href="images/C2-new-white.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +12,53 @@
     <meta property="og:description" content="Progress updates and milestones from Continental Studios projects.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://continental-hub.com/news.html">
-    <meta property="og:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta property="og:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Continental Studios | News">
     <meta name="twitter:description" content="Progress updates and milestones from Continental Studios projects.">
-    <meta name="twitter:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta name="twitter:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="theme-color" content="#111111">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCZ0C1B3EF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DCZ0C1B3EF');
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Continental Studios News",
+          "url": "https://continental-hub.com/news.html",
+          "description": "Progress updates and milestones from Continental Studios projects.",
+          "dateModified": "2026-03-08"
+        }
+    </script>
 </head>
 <body class="dark-mode">
-    <header>
-        <div class="left-text" id="header-logo">
-            <a href="index.html">
-                <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="news.html" class="semi-bold-text">News</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="websites.html">Websites</a></li>
-            </ul>
-        </nav>
-    </header>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <main class="news-page">
+    <!-- START:HEADER -->
+<header>
+    <div class="left-text" id="header-logo">
+        <a href="index.html" aria-label="Continental Studios home">
+            <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="news.html" class="semi-bold-text">News</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="websites.html" >Websites</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- END:HEADER -->
+
+    <main id="main-content" class="news-page">
         <section class="news-hero">
             <h1>Studio Updates</h1>
             <p>Progress notes and milestones from current projects.</p>
@@ -70,27 +93,32 @@
             </article>
         </section>
     </main>
+    <button id="backToTop" type="button" aria-label="Back to top" data-analytics="back_to_top">↑</button>
+    <script src="script.js" type="module"></script>
 
-    <footer>
-        <div class="left-content">
-            <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            <span>Continental</span>
-        </div>
-        <div class="center-content">
-            <p>
-                © 2025 PClaystation | 
-                <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="contact.html" id="contact-button">Contact Us</a>
-            </p>
-        </div>
-        <div class="right-content">
-            <a href="https://patreon.com/ContinentalStudios?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">
-                <img src="images/patreon.svg" alt="Patreon logo" loading="lazy">
-            </a>
-            <a href="https://gofund.me/5a43d215" target="_blank" rel="noopener noreferrer">
-                <img src="images/gofundme2.svg" alt="GoFundMe logo" loading="lazy">
-            </a>
-        </div>
-    </footer>
+    <!-- START:FOOTER -->
+<footer>
+    <div class="left-content">
+        <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        <span>Continental Studios</span>
+    </div>
+    <div class="center-content">
+        <p>
+            © 2026 PClaystation |
+            <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer" data-analytics="github_click">GitHub</a> |
+            <a href="contact.html" id="contact-button" data-analytics="contact_click">Contact Us</a>
+        </p>
+    </div>
+    <div class="right-content">
+        <a href="https://patreon.com/ContinentalStudios?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer" data-analytics="patreon_click">
+            <img src="images/patreon.svg" alt="Patreon logo" width="50" height="50" loading="lazy">
+        </a>
+        <a href="https://gofund.me/5a43d215" target="_blank" rel="noopener noreferrer" data-analytics="gofundme_click">
+            <img src="images/gofundme2.svg" alt="GoFundMe logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+</footer>
+
+<!-- END:FOOTER -->
 </body>
 </html>

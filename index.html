@@ -10,185 +10,169 @@
     <meta property="og:description" content="Independent web projects, tools, games, and experiments built under one creative umbrella.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://continental-hub.com/">
-    <meta property="og:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta property="og:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Continental Studios">
     <meta name="twitter:description" content="Independent web projects, tools, games, and experiments built under one creative umbrella.">
-    <meta name="twitter:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta name="twitter:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="theme-color" content="#111111">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/C2-dark.png" type="image/x-icon">
-      <!-- Google tag (gtag.js) -->
+    <link rel="icon" href="images/C2-new-white.png" type="image/png">
+    <link rel="preload" as="image" href="images/placeHolder2.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/C2-new-white.webp" type="image/webp">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCZ0C1B3EF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-DCZ0C1B3EF');
     </script>
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Continental Studios",
-            "url": "https://continental-hub.com/",
-            "logo": "https://continental-hub.com/images/C2-dark.png"
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "name": "Continental Studios",
+              "url": "https://continental-hub.com/",
+              "logo": "https://continental-hub.com/images/C2-new-white.png"
+            },
+            {
+              "@type": "WebSite",
+              "name": "Continental Studios",
+              "url": "https://continental-hub.com/"
+            }
+          ]
         }
     </script>
-</head> 
-<body>
-    
-    <section class="hero">
-        <img src="images/C2-dark.png" alt="Continental Studios logo" class="hero-logo">
-        <h1 id="hero-title">
-            Continental  <span class="flip-wrapper">
-                <span class="flip-text front">Studios</span>
-                <span class="flip-text back">Games</span>
-            </span>
-        </h1>
-        
-        
-        
-        
-        
-        <div class="styled-wrapper">
-            <button class="button" id="ChangeModeButton" aria-label="Toggle project list">
-                <div class="button-box" aria-hidden="true">
-                    <span class="button-elem">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-                            <path fill="white" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
-                        </svg>
-                    </span>
-                    <span class="button-elem">
-                        <svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
-                        </svg>
-                    </span>
+</head>
+<body class="dark-mode">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- START:HEADER -->
+<header>
+    <div class="left-text" id="header-logo">
+        <a href="index.html" aria-label="Continental Studios home">
+            <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="news.html" >News</a></li>
+            <li><a href="index.html" class="semi-bold-text">Home</a></li>
+            <li><a href="websites.html" >Websites</a></li>
+        </ul>
+    </nav>
+    <div class="right-text"><button id="logout-btn" type="button" data-analytics="dashboard_click">Dashboard</button></div>
+</header>
+
+<!-- END:HEADER -->
+
+    <main id="main-content">
+        <section class="hero">
+            <img src="images/C2-new-white.png" alt="Continental Studios logo" class="hero-logo" width="400" height="400">
+            <h1 id="hero-title">
+                <img src="images/Continental-nobg-white.png" alt="Continental" class="hero-title-image" width="900" height="220">
+            </h1>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-inner">
+                <h2>About</h2>
+                <p>
+                    Continental is my personal umbrella brand, a home for the digital work I build, experiment with, and polish until it feels real.
+                    Websites, tools, games, bots, and even a custom Linux setup all live under the same identity, while each project keeps its own name and style.
+                    If you see the globe mark or “A Continental Studios production,” that is the signature.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="about-card">
+                        <h3>Independent Projects</h3>
+                        <p>Each project stands on its own with its own vibe. Continental is the umbrella, not the theme.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Design-First</h3>
+                        <p>I care about clean visuals, strong identity, and the details that make projects feel finished.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Built to Grow</h3>
+                        <p>Some projects are quick experiments and some are long-term. The goal is to keep building and keep shipping.</p>
+                    </div>
                 </div>
-            </button>
-        </div>  
-    </section>
-    
-    <section class="about-section" id="About">
-        <div class="about-inner">
-          <h2>About</h2>
-          <p>
-            Continental is my personal umbrella brand — a home for the digital stuff I build, experiment with, and polish until it feels “real.”
-            Websites, tools, games, bots, and even a custom Linux setup all live under the same identity, but each project keeps its own name and style.
-            If you see the globe mark or “A Continental Studios production,” that’s the signature.
-          </p>
-      
-          <div class="about-highlights">
-            <div class="about-card">
-              <h3>Independent Projects</h3>
-              <p>Each thing stands on its own with its own vibe — Continental is the umbrella, not the theme.</p>
             </div>
-      
-            <div class="about-card">
-              <h3>Design-First</h3>
-              <p>I care a lot about clean visuals, strong identity, and small details that make projects feel finished.</p>
+        </section>
+
+        <section class="latest-update" aria-label="Latest update">
+            <div class="latest-inner">
+                <div class="latest-label">Latest Update</div>
+                <div class="latest-content">
+                    <h3>Home page revamp underway</h3>
+                    <p>We are rebuilding the landing experience with cleaner sections, stronger visuals, and better navigation flow.</p>
+                </div>
+                <a class="latest-link" href="news.html" data-analytics="latest_updates_click">See all updates</a>
             </div>
-      
-            <div class="about-card">
-              <h3>Built to Grow</h3>
-              <p>Some projects are quick experiments, some are long-term. The goal is to keep building and keep shipping.</p>
+        </section>
+
+        <section class="main-content" aria-label="Websites">
+            <h2>Websites</h2>
+            <p id="settings-button"></p> <!-- DO NOT TOUCH -->
+            <div class="website-list">
+                <div class="website-item">
+                    <img src="images/App-logo-2-W.png" alt="StepCast logo" class="website-logo" width="100" height="100" loading="lazy">
+                    <h3>StepCast</h3>
+                    <p>StepCast is a walk tracking website tailored toward podcast listeners.</p>
+                    <a href="https://pclaystation.github.io/Walk-Tracker-Web-App/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="stepcast_visit">Visit Website</a>
+                </div>
+                <div class="website-item">
+                    <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="website-logo" width="100" height="100" loading="lazy">
+                    <h3>The Echo Archives</h3>
+                    <p>The Echo Archives is an archive of different audio dramas I have listened to.</p>
+                    <a href="https://pclaystation.github.io/The-Echo-Archives/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="echo_archives_visit">Visit Website</a>
+                </div>
+                <div class="website-item">
+                    <img src="images/minesweeper-nbg-w.png" alt="MineSweeper logo" class="website-logo" width="100" height="100" loading="lazy">
+                    <h3>MineSweeper</h3>
+                    <p>MineSweeper is an improved clone of the classic minesweeper.</p>
+                    <a href="https://pclaystation.github.io/Minesweeper/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="minesweeper_visit">Visit Website</a>
+                </div>
+                <div class="website-item">
+                    <img src="images/question-mark.png" alt="Coming soon" class="website-logo" width="100" height="100" loading="lazy">
+                    <h3>Coming soon</h3>
+                    <p>Coming soon.</p>
+                    <span class="btn disabled" aria-disabled="true">Coming Soon</span>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+    </main>
 
-    <section class="latest-update" aria-label="Latest update">
-        <div class="latest-inner">
-            <div class="latest-label">Latest Update</div>
-            <div class="latest-content">
-                <h3>Home page revamp underway</h3>
-                <p>We are rebuilding the landing experience with cleaner sections, stronger visuals, and better navigation flow.</p>
-            </div>
-            <a class="latest-link" href="news.html">See all updates</a>
-        </div>
-    </section>
-      
-
-
-    <section class="main-content">
-        <h2>Websites</h2>
-        <p id="settings-button"></p> <!-- DO NOT TOUCH -->
-
-        <div class="circle-with-arrow"></div>
-
-    
-        <!-- New flex container for the cards -->
-        <div class="website-list">
-            <div class="website-item">
-                <img src="images/App-logo-2-W.png" alt="StepCast logo" class="website-logo" loading="lazy">
-                <h3>StepCast</h3>
-                <p>StepCast is a walk tracking website tailored towards podcast listeners.</p>
-                <a href="https://pclaystation.github.io/Walk-Tracker-Web-App/" class="btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
-            </div>
-            <div class="website-item">
-                <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="website-logo" loading="lazy">
-                <h3>The Echo Archives</h3>
-                <p>The Echo Archives is a archive of different audio dramas I have listened to.</p>
-                <a href="https://pclaystation.github.io/The-Echo-Archives/" class="btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
-            </div>
-        </div>
-    </section>
-    
-    <button id="backToTop" aria-label="Back to top">↑</button>
-
-    
-    
-    
-
-
-    <header>
-        <div class="left-text" id="header-logo">
-            <a href="index.html">
-                <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="news.html">News</a></li>
-                <li><a href="index.html" class="semi-bold-text">Home</a></li>
-                <li><a href="websites.html">Websites</a></li>
-            </ul>
-        </nav>
-        <div class="right-text">
-            <button id="logout-btn">Dashboard</button>
-        </div>
-    </header>
-    
-    
-    
-    
-    
-
-
+    <button id="backToTop" type="button" aria-label="Back to top" data-analytics="back_to_top">↑</button>
     <script src="script.js" type="module"></script>
 
-    <footer>
-        <div class="left-content">
-            <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            <span>Continental</span>
-        </div>
-        <div class="center-content">
-            <p>
-                © 2025 PClaystation | 
-                <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="contact.html" id="contact-button">Contact Us</a>
-         </p>
-        </div>
-        <div class="right-content">
-            <a href="https://patreon.com/ContinentalStudios?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">
-                <img src="images/patreon.svg" alt="Patreon logo" loading="lazy">
-            </a>
-            <a href="https://gofund.me/5a43d215" target="_blank" rel="noopener noreferrer">
-                <img src="images/gofundme2.svg" alt="GoFundMe logo" loading="lazy">
-            </a>
-        </div>
-    </footer>
-    
+    <!-- START:FOOTER -->
+<footer>
+    <div class="left-content">
+        <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        <span>Continental Studios</span>
+    </div>
+    <div class="center-content">
+        <p>
+            © 2026 PClaystation |
+            <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer" data-analytics="github_click">GitHub</a> |
+            <a href="contact.html" id="contact-button" data-analytics="contact_click">Contact Us</a>
+        </p>
+    </div>
+    <div class="right-content">
+        <a href="https://patreon.com/ContinentalStudios?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer" data-analytics="patreon_click">
+            <img src="images/patreon.svg" alt="Patreon logo" width="50" height="50" loading="lazy">
+        </a>
+        <a href="https://gofund.me/5a43d215" target="_blank" rel="noopener noreferrer" data-analytics="gofundme_click">
+            <img src="images/gofundme2.svg" alt="GoFundMe logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+</footer>
+
+<!-- END:FOOTER -->
 </body>
 </html>

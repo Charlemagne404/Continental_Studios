@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/C2-dark.png" type="image/x-icon">
-
+    <link rel="icon" href="images/C2-new-white.png" type="image/png">
     <link rel="stylesheet" href="websites.css">
     <link rel="stylesheet" href="style.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websites | Continental Studios</title>
@@ -15,25 +13,53 @@
     <meta property="og:description" content="Explore websites and projects created by Continental Studios.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://continental-hub.com/websites.html">
-    <meta property="og:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta property="og:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Continental Studios | Websites">
     <meta name="twitter:description" content="Explore websites and projects created by Continental Studios.">
-    <meta name="twitter:image" content="https://continental-hub.com/images/C2-dark.png">
+    <meta name="twitter:image" content="https://continental-hub.com/images/C2-new-white.png">
     <meta name="theme-color" content="#111111">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCZ0C1B3EF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-DCZ0C1B3EF');
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCZ0C1B3EF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DCZ0C1B3EF');
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Continental Studios Websites",
+          "url": "https://continental-hub.com/websites.html",
+          "description": "Explore websites and projects created by Continental Studios.",
+          "dateModified": "2026-03-08"
+        }
+    </script>
 </head>
-<body>
+<body class="dark-mode">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <main class="websites-page">
+    <!-- START:HEADER -->
+<header>
+    <div class="left-text" id="header-logo">
+        <a href="index.html" aria-label="Continental Studios home">
+            <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="news.html" >News</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="websites.html" class="semi-bold-text">Websites</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- END:HEADER -->
+
+    <main id="main-content" class="websites-page">
         <section class="websites-hero">
             <h1>Our Websites</h1>
             <p>Explore projects from Continental Studios.</p>
@@ -42,81 +68,71 @@
         <section class="websites-grid">
             <article class="website-card">
                 <div class="card-top">
-                    <img src="images/App-logo-2-W.png" alt="StepCast logo" class="card-logo" loading="lazy">
+                    <img src="images/App-logo-2-W.png" alt="StepCast logo" class="card-logo" width="72" height="72" loading="lazy">
                     <div class="card-text">
                         <h2>StepCast</h2>
                         <p>Walk tracking made for podcast listeners, with a clean, distraction-free interface.</p>
                     </div>
                 </div>
                 <div class="card-actions">
-                    <a class="card-link" href="https://pclaystation.github.io/Walk-Tracker-Web-App/" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a class="card-link" href="https://pclaystation.github.io/Walk-Tracker-Web-App/" target="_blank" rel="noopener noreferrer" data-analytics="stepcast_visit">Visit</a>
                 </div>
             </article>
 
             <article class="website-card">
                 <div class="card-top">
-                    <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="card-logo" loading="lazy">
+                    <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="card-logo" width="72" height="72" loading="lazy">
                     <div class="card-text">
                         <h2>The Echo Archives</h2>
                         <p>An archive of audio dramas and listening notes, curated and organized for quick discovery.</p>
                     </div>
                 </div>
                 <div class="card-actions">
-                    <a class="card-link" href="https://pclaystation.github.io/The-Echo-Archives/" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a class="card-link" href="https://pclaystation.github.io/The-Echo-Archives/" target="_blank" rel="noopener noreferrer" data-analytics="echo_archives_visit">Visit</a>
                 </div>
             </article>
 
             <article class="website-card">
                 <div class="card-top">
-                    <img src="images/minesweeper-nbg-w.png" alt="MineSweeper logo" class="card-logo" loading="lazy">
+                    <img src="images/minesweeper-nbg-w.png" alt="MineSweeper logo" class="card-logo" width="72" height="72" loading="lazy">
                     <div class="card-text">
                         <h2>MineSweeper</h2>
                         <p>A refined remake of the classic minesweeper with smooth animations and clear visuals.</p>
                     </div>
                 </div>
                 <div class="card-actions">
-                    <a class="card-link" href="https://pclaystation.github.io/Minesweeper/" target="_blank" rel="noopener noreferrer">Play</a>
+                    <a class="card-link" href="https://pclaystation.github.io/Minesweeper/" target="_blank" rel="noopener noreferrer" data-analytics="minesweeper_visit">Play</a>
                 </div>
             </article>
         </section>
     </main>
 
-    <button id="backToTop">↑</button>
+    <button id="backToTop" type="button" aria-label="Back to top" data-analytics="back_to_top">↑</button>
     <script src="script.js" type="module"></script>
 
+    <!-- START:FOOTER -->
+<footer>
+    <div class="left-content">
+        <img src="images/C2-new-white.png" alt="Continental Studios logo" width="50" height="50" loading="lazy">
+        <span>Continental Studios</span>
+    </div>
+    <div class="center-content">
+        <p>
+            © 2026 PClaystation |
+            <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer" data-analytics="github_click">GitHub</a> |
+            <a href="contact.html" id="contact-button" data-analytics="contact_click">Contact Us</a>
+        </p>
+    </div>
+    <div class="right-content">
+        <a href="https://patreon.com/ContinentalStudios?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer" data-analytics="patreon_click">
+            <img src="images/patreon.svg" alt="Patreon logo" width="50" height="50" loading="lazy">
+        </a>
+        <a href="https://gofund.me/5a43d215" target="_blank" rel="noopener noreferrer" data-analytics="gofundme_click">
+            <img src="images/gofundme2.svg" alt="GoFundMe logo" width="50" height="50" loading="lazy">
+        </a>
+    </div>
+</footer>
 
-    
-
-    <header>
-        <div class="left-text" id="header-logo">
-            <a href="index.html">
-                <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="news.html">News</a></li>
-                <li><a href="index.html" class="semi-bold-text">Home</a></li>
-                <li><a href="websites.html">Websites</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-
-    <footer>
-        <div class="left-content">
-            <img src="images/C2-dark.png" alt="Continental Studios logo" loading="lazy">
-            <span>Continental Studios</span>
-        </div>
-        <div class="center-content">
-            <p>
-                © 2025 PClaystation | 
-                <a href="https://github.com/PClaystation" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="contact.html" id="contact-button">Contact Us</a>
-            </p>
-        </div>
-    </footer>
-
-
+<!-- END:FOOTER -->
 </body>
 </html>

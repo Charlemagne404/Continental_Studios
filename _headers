@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), geolocation=(), microphone=()
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://tally.so; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; img-src 'self' https: data:; style-src 'self' 'unsafe-inline'; frame-src https://tally.so; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://tally.so;
