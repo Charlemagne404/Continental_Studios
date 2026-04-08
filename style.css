@@ -66,13 +66,16 @@ body, html {
 }
 
 .hero-logo {
-    width: 400px; /* Adjust the size of the logo */
+    width: min(320px, 70vw);
+    max-width: 320px;
+    height: auto;
+    /* Adjust the size of the logo */
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5)); /* Apply shadow directly on the logo */
 }
 
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -81,7 +84,7 @@ body, html {
 }
 
 .hero-title-image {
-    width: min(900px, 78vw);
+    width: min(700px, 70vw);
     height: auto;
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.45));
 }
@@ -274,31 +277,86 @@ html {
 
 /* Main content section */
 .main-content {
-    padding: 50px 20px;
-    background-color: #f4f4f4; /* Light background color */
+    padding: 88px 24px;
+    background:
+        linear-gradient(180deg, #222222 0%, #1c1f24 100%);
     text-align: center;
 }
 
-/* Container for website items */
+.portfolio-section {
+    position: relative;
+}
+
+.portfolio-section + .portfolio-section {
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-section-alt {
+    background:
+        linear-gradient(180deg, #1f2228 0%, #1a1d22 100%);
+}
+
+.portfolio-section-alt-2 {
+    background:
+        linear-gradient(180deg, #1d2025 0%, #181a1f 100%);
+}
+
+.section-heading {
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+
+.section-kicker {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(245, 245, 245, 0.82);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 0.95;
+    color: #f5f5f5;
+}
+
+.section-heading p {
+    margin: 18px auto 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(245, 245, 245, 0.7);
+}
+
 .website-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align items from the left */
-    gap: 20px; /* Space between cards */
+    flex-direction: column;
+    gap: 22px;
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
-/* Website item section */
 .website-item {
-    background: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 10px); /* Ensures two items per row */
-    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: #262a31;
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(12px);
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 2s, transform 2s;
-    box-sizing: border-box; /* Prevents layout issues */
+    transition: opacity 0.9s ease, transform 0.9s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    box-sizing: border-box;
 }
 
 .website-item.visible {
@@ -307,25 +365,73 @@ html {
 }
 
 .website-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 26px 52px rgba(0, 0, 0, 0.34);
+}
+
+.website-item:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
+}
+
+.website-item:nth-child(even) .website-media {
+    order: 2;
+}
+
+.website-item:nth-child(even) .website-copy {
+    order: 1;
+}
+
+.website-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 42px 24px;
+    background:
+        linear-gradient(145deg, #2f333a 0%, #272b32 55%, #20242a 100%);
+}
+
+.website-item:nth-child(even) .website-media {
+    background:
+        linear-gradient(145deg, #20242a 0%, #2a2f36 42%, #333942 100%);
 }
 
 .website-logo {
-    width: 100px;
-    height: 100px;
+    width: min(140px, 100%);
+    height: auto;
     object-fit: contain;
-    margin-bottom: 15px;
+    filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.30));
+}
+
+.website-copy {
+    padding: 36px 40px;
+    text-align: left;
+}
+
+.website-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: rgba(245, 245, 245, 0.56);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
 .website-item h3 {
-    margin: 15px 0;
-    font-size: 2rem;
+    margin: 0 0 16px;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    line-height: 0.98;
+    color: #f5f5f5;
 }
 
 .website-item p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    margin: 0 0 28px;
+    max-width: 58ch;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(245, 245, 245, 0.72);
 }
 
 .btn {
@@ -349,10 +455,56 @@ html {
     opacity: 0.8;
 }
 
-/* Make it responsive: 1 card per row on small screens */
+.website-cta {
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #f0f0f0;
+    color: #111;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.website-cta:hover {
+    background: #dcdcdc;
+}
+
 @media (max-width: 768px) {
+    .main-content {
+        padding: 72px 18px;
+    }
+
+    .portfolio-section + .portfolio-section {
+        padding-top: 44px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
     .website-item {
-        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .website-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .website-item:nth-child(even) .website-media,
+    .website-item:nth-child(even) .website-copy {
+        order: initial;
+    }
+
+    .website-media {
+        padding: 32px 20px 22px;
+    }
+
+    .website-copy {
+        padding: 24px 20px 28px;
+        text-align: center;
+    }
+
+    .website-item p {
+        max-width: none;
     }
 }
 
@@ -376,17 +528,57 @@ html {
 
 
 .dark-mode .main-content {
-    background-color: #222;
+    background:
+        linear-gradient(180deg, #1c1f24 0%, #17191d 100%);
+}
+
+.dark-mode .portfolio-section-alt {
+    background:
+        linear-gradient(180deg, #191c21 0%, #15171b 100%);
+}
+
+.dark-mode .portfolio-section-alt-2 {
+    background:
+        linear-gradient(180deg, #171a1f 0%, #131519 100%);
 }
 
 .dark-mode .website-item {
-    background: #333;
+    background: #262a31;
+    border-color: rgba(255, 255, 255, 0.06);
     color: #fff;
+}
+
+.dark-mode .section-kicker {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(245, 245, 245, 0.82);
+}
+
+.dark-mode .section-heading h2,
+.dark-mode .website-item h3 {
+    color: #f8fafc;
+}
+
+.dark-mode .section-heading p,
+.dark-mode .website-item p {
+    color: rgba(245, 245, 245, 0.72);
+}
+
+.dark-mode .website-eyebrow {
+    color: rgba(245, 245, 245, 0.56);
 }
 
 .dark-mode .btn {
     background-color: #444;
     color: #fff;
+}
+
+.dark-mode .website-cta {
+    background: #f0f0f0;
+    color: #111;
+}
+
+.dark-mode .website-cta:hover {
+    background: #dcdcdc;
 }
 
 .dark-mode .btn:hover {
@@ -407,7 +599,7 @@ header {
     display: flex;
     justify-content: space-between; /* Spreads items evenly */
     align-items: center;
-    padding: 10px 30px; /* Adds padding so text doesn't hug the screen */
+    padding: 6px 24px; /* Slimmer header height on desktop */
 }
 
 /* Center the navigation */
@@ -423,28 +615,28 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 10px 0;
-    margin-right: 100px;
+    padding: 0;
+    margin-right: 56px;
 }
 
 nav li {
-    margin: 0 20px;
+    margin: 0 14px;
     position: relative; /* Allows absolute positioning of the separator */
 }
 
 /* Add separator (|) between each item except the last one */
 nav li:not(:last-child)::after {
     content: "|";  /* Separator */
-    margin-left: 20px; /* Adds space before the separator */
+    margin-left: 12px; /* Adds space before the separator */
     color: white; /* Set the color of the separator */
-    font-size: 32px; /* Same font size as the links */
+    font-size: 28px; /* Keep the separator proportional to the smaller nav */
 }
 
 /* Link styles */
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .semi-bold-text {
@@ -484,8 +676,8 @@ footer a:focus-visible {
     background: white;
     border: none;
     color: #121212;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.92rem;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
@@ -549,9 +741,9 @@ footer a:focus-visible {
     transform: translateX(-50%) rotate(180deg);
   }
 
-  .left-text img {
-    height: 50px;
-    width: 50px;
+.left-text img {
+    height: 42px;
+    width: 42px;
     margin-right: 10px; /* Space between image and text */
 }
 
@@ -563,8 +755,8 @@ footer a:focus-visible {
 
 
 .right-content img {
-    height: 50px;
-    width: 50px;
+    height: 42px;
+    width: 42px;
     margin-right: 100px; /* Space between image and text */
 }
 
@@ -738,4 +930,3 @@ footer a:hover {
         transition-duration: 0.001ms !important;
     }
 }
-

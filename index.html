@@ -60,7 +60,7 @@
         <ul>
             <li><a href="news.html" >News</a></li>
             <li><a href="index.html" class="semi-bold-text">Home</a></li>
-            <li><a href="websites.html" >Websites</a></li>
+            <li><a href="websites.html" >Projects</a></li>
         </ul>
     </nav>
     <div class="right-text"><button id="logout-btn" type="button" data-analytics="dashboard_click">Dashboard</button></div>
@@ -70,9 +70,9 @@
 
     <main id="main-content">
         <section class="hero">
-            <img src="images/C2-new-white.png" alt="Continental Studios logo" class="hero-logo" width="400" height="400">
+            <img src="images/C2-new-white.png" alt="Continental Studios logo" class="hero-logo">
             <h1 id="hero-title">
-                <img src="images/Continental-nobg-white.png" alt="Continental" class="hero-title-image" width="900" height="220">
+                <img src="images/Continental-nobg-white.png" alt="Continental" class="hero-title-image">
             </h1>
         </section>
 
@@ -115,33 +115,99 @@
             </div>
         </section>
 
-        <section class="main-content" aria-label="Websites">
-            <h2>Websites</h2>
+        <section class="main-content portfolio-section" aria-label="Projects">
+            <div class="section-heading">
+                <span class="section-kicker">Portfolio</span>
+                <h2>Projects</h2>
+                <p>A growing collection of public-facing projects, ranging from focused utility apps to larger interactive platforms and connected services.</p>
+            </div>
             <p id="settings-button"></p> <!-- DO NOT TOUCH -->
             <div class="website-list">
                 <div class="website-item">
-                    <img src="images/App-logo-2-W.png" alt="StepCast logo" class="website-logo" width="100" height="100" loading="lazy">
-                    <h3>StepCast</h3>
-                    <p>StepCast is a walk tracking website tailored toward podcast listeners.</p>
-                    <a href="https://pclaystation.github.io/Walk-Tracker-Web-App/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="stepcast_visit">Visit Website</a>
+                    <div class="website-media">
+                        <img src="images/App-logo-2-W.png" alt="StepCast logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Route Tracking</span>
+                        <h3>StepCast</h3>
+                        <p>StepCast is a podcast-focused walk tracker that lets you map routes, save walks, log listening sessions, and review your history in a mobile-friendly interface.</p>
+                        <a href="https://pclaystation.github.io/Walk-Tracker-Web-App/" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="stepcast_visit">Open StepCast</a>
+                    </div>
                 </div>
                 <div class="website-item">
-                    <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="website-logo" width="100" height="100" loading="lazy">
-                    <h3>The Echo Archives</h3>
-                    <p>The Echo Archives is an archive of different audio dramas I have listened to.</p>
-                    <a href="https://pclaystation.github.io/The-Echo-Archives/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="echo_archives_visit">Visit Website</a>
+                    <div class="website-media">
+                        <img src="images/TEA-Logo-S-W.png" alt="The Echo Archives logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Audio Drama Archive</span>
+                        <h3>The Echo Archives</h3>
+                        <p>The Echo Archives is a curated library of audio dramas with searchable entries, tag-based filtering, personal ratings, and dedicated pages for individual shows.</p>
+                        <a href="https://pclaystation.github.io/The-Echo-Archives/" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="echo_archives_visit">Open The Echo Archives</a>
+                    </div>
                 </div>
                 <div class="website-item">
-                    <img src="images/minesweeper-nbg-w.png" alt="MineSweeper logo" class="website-logo" width="100" height="100" loading="lazy">
-                    <h3>MineSweeper</h3>
-                    <p>MineSweeper is an improved clone of the classic minesweeper.</p>
-                    <a href="https://pclaystation.github.io/Minesweeper/" class="btn" target="_blank" rel="noopener noreferrer" data-analytics="minesweeper_visit">Visit Website</a>
+                    <div class="website-media">
+                        <img src="images/minesweeper-nbg-w.png" alt="Minesweeper logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Puzzle Game</span>
+                        <h3>Minesweeper</h3>
+                        <p>Minesweeper is a browser-based rebuild of the classic game with cleaner state handling, multiple difficulty presets, custom boards, timers, and a local leaderboard system.</p>
+                        <a href="https://minesweeper.continental-hub.com" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="minesweeper_visit">Open Minesweeper</a>
+                    </div>
                 </div>
                 <div class="website-item">
-                    <img src="images/question-mark.png" alt="Coming soon" class="website-logo" width="100" height="100" loading="lazy">
-                    <h3>Coming soon</h3>
-                    <p>Coming soon.</p>
-                    <span class="btn disabled" aria-disabled="true">Coming Soon</span>
+                    <div class="website-media">
+                        <img src="images/C2-new-white.png" alt="Grimoire logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Deckbuilder + Tabletop</span>
+                        <h3>Grimoire</h3>
+                        <p>Grimoire is a Magic: The Gathering deckbuilder with live card search, deck analysis, import and export tools, and a room-based online tabletop mode backed by synchronized multiplayer game state.</p>
+                        <a href="https://grimoire.continental-hub.com" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="grimoire_visit">Open Grimoire</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content portfolio-section portfolio-section-alt" aria-label="Discord bot">
+            <div class="section-heading">
+                <span class="section-kicker">Systems</span>
+                <h2>Discord Bot</h2>
+                <p>Not every project in the portfolio is a website. Vanguard is part moderation tool, part community utility layer, and part operations platform.</p>
+            </div>
+            <div class="website-list">
+                <div class="website-item">
+                    <div class="website-media">
+                        <img src="images/Bot_Logo.png" alt="Vanguard logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Discord Moderation + Utility</span>
+                        <h3>Vanguard</h3>
+                        <p>Vanguard is a Discord bot built for moderation, utility commands, reminders, voting workflows, AI chat features, and guard systems, with an attached control center for managing live server configuration.</p>
+                        <a href="https://vanguard.continental-hub.com" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="vanguard_visit">Open Vanguard</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content portfolio-section portfolio-section-alt-2" aria-label="Continental ID">
+            <div class="section-heading">
+                <span class="section-kicker">Identity</span>
+                <h2>Continental ID</h2>
+                <p>The shared account system behind the wider project ecosystem, designed to connect services instead of leaving every app isolated.</p>
+            </div>
+            <div class="website-list">
+                <div class="website-item">
+                    <div class="website-media">
+                        <img src="images/Continental-ID-nbg-w.png" alt="Continental ID logo" class="website-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="website-copy">
+                        <span class="website-eyebrow">Account System</span>
+                        <h3>Dashboard / Continental ID</h3>
+                        <p>Continental ID is the account platform for the broader Continental ecosystem, with sign-in, linked providers, profile management, security controls, session handling, and service integration points for projects like Grimoire and Vanguard.</p>
+                        <a href="https://dashboard.continental-hub.com" class="btn website-cta" target="_blank" rel="noopener noreferrer" data-analytics="continental_id_visit">Open Continental ID</a>
+                    </div>
                 </div>
             </div>
         </section>

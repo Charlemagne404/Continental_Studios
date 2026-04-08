@@ -1,94 +1,211 @@
-/* websites page */
+/* projects page */
 
 body {
-    background: #0e0f12;
+    background:
+        radial-gradient(circle at top, rgba(85, 130, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, #090b10 0%, #0d1118 45%, #0a0d13 100%);
     color: #f7f7f7;
 }
 
 .websites-page {
-    padding: 140px 6vw 80px;
-    max-width: 1100px;
+    padding: 140px 6vw 100px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .websites-hero {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
+}
+
+.hero-kicker,
+.section-eyebrow,
+.project-type {
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #8bb8ff;
 }
 
 .websites-hero h1 {
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
-    margin-bottom: 12px;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    margin: 14px 0 18px;
     letter-spacing: 0.02em;
 }
 
-.websites-hero p {
+.websites-hero p:last-child {
     margin: 0 auto;
-    max-width: 640px;
-    color: rgba(247, 247, 247, 0.7);
-    font-size: 1.1rem;
+    max-width: 760px;
+    color: rgba(247, 247, 247, 0.78);
+    font-size: 1.12rem;
+    line-height: 1.75;
 }
 
-.websites-grid {
+.projects-section {
+    margin-top: 72px;
+}
+
+.section-copy {
+    margin-bottom: 28px;
+    max-width: 760px;
+}
+
+.section-copy h2 {
+    margin: 14px 0 12px;
+    font-size: clamp(1.9rem, 3vw, 2.9rem);
+}
+
+.section-copy p {
+    margin: 0;
+    color: rgba(247, 247, 247, 0.7);
+    line-height: 1.7;
+}
+
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
 }
 
-.website-card {
-    background: #1a1c22;
-    border-radius: 16px;
-    padding: 22px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+.projects-grid-single {
+    grid-template-columns: 1fr;
 }
 
-.card-top {
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 26px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+        rgba(10, 14, 22, 0.88);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32);
+}
+
+.projects-section-alt .project-card {
+    background:
+        linear-gradient(180deg, rgba(111, 227, 192, 0.08), rgba(255, 255, 255, 0.02)),
+        rgba(10, 14, 22, 0.88);
+}
+
+.projects-section-alt-2 .project-card {
+    background:
+        linear-gradient(180deg, rgba(255, 199, 108, 0.08), rgba(255, 255, 255, 0.02)),
+        rgba(10, 14, 22, 0.88);
+}
+
+.project-intro {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 16px;
-    align-items: center;
+    gap: 18px;
+    align-items: start;
 }
 
 .card-logo {
     width: 72px;
     height: 72px;
     object-fit: contain;
-    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+    filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
 }
 
-.card-text h2 {
-    margin: 0 0 6px;
-    font-size: 1.4rem;
+.card-text h3 {
+    margin: 8px 0 10px;
+    font-size: 1.65rem;
 }
 
 .card-text p {
+    margin: 0 0 14px;
+    color: rgba(247, 247, 247, 0.75);
+    line-height: 1.7;
+}
+
+.card-text p:last-child {
+    margin-bottom: 0;
+}
+
+.project-preview {
+    position: relative;
+    min-height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background:
+        linear-gradient(135deg, rgba(65, 101, 196, 0.2), rgba(10, 14, 22, 0.96)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+}
+
+.project-preview::after {
+    content: "";
+    position: absolute;
+    inset: 48px 18px 18px;
+    border: 1px dashed rgba(255, 255, 255, 0.22);
+    border-radius: 14px;
+    pointer-events: none;
+}
+
+.project-browser-bar {
+    display: flex;
+    gap: 8px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-browser-bar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.32);
+}
+
+.project-preview-body {
+    min-height: 190px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 28px;
+}
+
+.project-preview-body strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.project-preview-body p {
     margin: 0;
+    max-width: 360px;
     color: rgba(247, 247, 247, 0.7);
-    line-height: 1.5;
+    line-height: 1.65;
 }
 
 .card-actions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: #f1f1f1;
     color: #111;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 11px 20px;
     border-radius: 999px;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .card-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+    background: #ffffff;
 }
 
 .card-link:focus-visible {
@@ -96,20 +213,22 @@ body {
     outline-offset: 3px;
 }
 
-.card-link.disabled {
-    background: rgba(241, 241, 241, 0.25);
-    color: rgba(255, 255, 255, 0.7);
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-@media (max-width: 720px) {
+@media (max-width: 780px) {
     .websites-page {
-        padding: 120px 6vw 60px;
+        padding: 120px 6vw 72px;
     }
 
-    .card-top {
+    .project-intro {
         grid-template-columns: 1fr;
+    }
+
+    .card-logo {
+        margin: 0 auto;
+    }
+
+    .card-text,
+    .section-copy,
+    .websites-hero {
         text-align: center;
     }
 
