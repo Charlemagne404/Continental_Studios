@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
-      window.location.href = "https://pclaystation.github.io/Dashboard/?";
+      window.location.href = "https://charlemagne404.github.io/Dashboard/?";
     });
   }
 

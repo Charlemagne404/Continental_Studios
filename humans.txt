@@ -1,7 +1,7 @@
 /* TEAM */
 Developer: PClaystation
 Site: https://continental-hub.com/
-Repo: https://github.com/PClaystation/Continental_Studios
+Repo: https://github.com/Charlemagne404/Continental_Studios
 
 /* THANKS */
 Tools: OpenAI Codex
